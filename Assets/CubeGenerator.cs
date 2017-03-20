@@ -52,6 +52,7 @@ public class CubeGenerator : MonoBehaviour
                 // キューブの生成
                 GameObject go = Instantiate(cubePrefab) as GameObject;
                 go.transform.position = new Vector2(this.genPosX, this.offsetY + i * this.spaceY);
+
             }
             // 次のキューブまでの生成時間を決める
             this.span = this.offsetX + this.spaceX * n;
